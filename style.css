@@ -21,26 +21,45 @@ p {
     padding: 15px;
 }
 
-#toast {
-      visibility: hidden;
-      min-width: 250px;
-      margin-left: -125px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      border-radius: 8px;
-      padding: 16px;
-      position: fixed;
-      z-index: 1;
-      left: 50%;
-      bottom: 30px;
-      font-size: 17px;
-      opacity: 0;
-      transition: opacity 0.5s, bottom 0.5s;
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+      cursor: pointer;
     }
 
-    #toast.show {
-      visibility: visible;
-      opacity: 1;
-      bottom: 50px;
-    }
+#loginBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#downloadBtn {
+    background-color: #008CBA;
+    color: white;
+}
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+#toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+}

@@ -5,7 +5,12 @@ function showToast(message) {
     toast.textContent = message;
     toast.className = "show";
     setTimeout(() => {toast.className = toast.className.replace("show", "");}, 3000); // Toast will disappear after 3 seconds
-}   
+}  
+
+function login() {
+    IsLogedIn = true;
+    showToast("You are now logged in.");
+}
 
 function downloadFile() {
     if (IsLogedIn === true) {
